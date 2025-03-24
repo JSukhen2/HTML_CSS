@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table tag</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 15px;
+      }
+      .col1 {
+        width: 100px;
+      }
+      .col2 {
+        width: 150px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table 기본</h1>
+    <table>
+      <caption>
+        프로필 테이블
+      </caption>
+      <tr>
+        <th>이름</th>
+        <th>학번</th>
+        <th>성별</th>
+      </tr>
+
+      <tr>
+        <th>JO</th>
+        <th>205133</th>
+        <th>남</th>
+      </tr>
+
+      <tr>
+        <th>JA</th>
+        <th>205155</th>
+        <th>여</th>
+      </tr>
+      <tfoot>
+        <tr>
+          <th>WO</th>
+          <th>205152</th>
+          <th>남</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+
+    <h1>Table 그룹 태그</h1>
+    <table>
+      <caption>
+        학급 점수
+      </caption>
+
+      <colgroup>
+        <col class="col1"/>
+        <col class="col2"/>
+        <col class="col1"/>
+        <col class="col2"/>
+        <col class="col1"/>
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>반</th>
+          <th>이름</th>
+          <th>국어</th>
+          <th>수학</th>
+          <th>영어</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="2">1반</th>
+          <th>A</th>
+          <th>22</th>
+          <th>43</th>
+          <th>100</th>
+        </tr>
+
+        <tr>
+            <th>X</th>
+            <th>33</th>
+            <th>45</th>
+            <th>20</th>
+          </tr>
+
+        <tr>
+          <th>2반</th>
+          <th>b</th>
+          <th>72</th>
+          <th>83</th>
+          <th>67</th>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>전체반</th>
+          <th>평균</th>
+          <th>100</th>
+          <th>85</th>
+          <th>100</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
