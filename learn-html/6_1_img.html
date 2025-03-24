@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>img media</title>
+    <style>
+      video {
+        width: 450px;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="#target1">이미지</a> <a href="#target2">오디오</a>
+        <a href="#target3">비디오</a> <a href="#target4">하이퍼링크</a>
+      </h1>
+    </header>
+    <h2 id="target1">Img Tag</h2>
+    <div>
+      <img src="/img/image01.jpg" width="500px" alt="강아지" />
+      <img src="/img/image02.jpg" width="500px" alt="뱀" />
+    </div>
+    <hr />
+    <h2 id="target2">Audio Tag</h2>
+    <div>
+      <audio src="/music/music01.mp3" controls></audio>
+    </div>
+    <hr />
+    <h2 id="target3">Video Tag</h2>
+    <div>
+      <video src="/video/video01.mp4" autoplay type="video/mp4" loop></video>
+    </div>
+    <hr />
+    <h2 id="target4">HyperLink Tag</h2>
+    <a href="https://naver.com">네이버</a><br />
+    새탭을 할 수 있을까?
+    <a href="https://naver.com" target="_blank">네이버</a>은 어때?
+    <a href="https://google.com" target="_blank">구글</a>
+    <!-- 새탭 -->
+    <div>
+      <a href="mailto:bruce.gomdoli4471@gmail.com">이메일 발송</a>
+    </div>
+  </body>
+</html>
